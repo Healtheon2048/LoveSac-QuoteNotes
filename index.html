@@ -174,7 +174,7 @@
         // Calculate days until expiration
         function getDaysUntilExpiration(expirationDate) {
             const today = new Date();
-            today.setHours(0, 0, 0, 0); // Set to beginning of day for accurate day count
+            today.setHours(4, 0, 0, 0); // Set to beginning of day for accurate day count
             
             const expDate = new Date(expirationDate);
             expDate.setHours(20, 0, 0, 0); // Set to beginning of day for accurate day count
