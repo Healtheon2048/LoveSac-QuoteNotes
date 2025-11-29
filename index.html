@@ -244,7 +244,7 @@
             }
             
             // Price section
-            output += `{{ ${formatCurrency(quoteTotal)}`;
+            output += `{ ${formatCurrency(quoteTotal)}`;
             
             // Add monthly payment if financing is specified
             if (financing > 0) {
@@ -261,10 +261,10 @@
                 output += ' with Heroes Code**';
             }
             
-            output += ' }}   ';
+            output += ' }   ';
             
             // Expiration section
-            output += ` (!!) EXPIRES in ${daysUntilExpiration} days on ${formattedExpDate} (!!)   `;
+            output += ` ...(!) EXPIRES in ${daysUntilExpiration} days on ${formattedExpDate} (!)...   `;
             
             // Heroes message if checked
             if (isHero) {
@@ -272,7 +272,7 @@
             }
             
             // Author & Date
-            output += `-by ${author} on ${todayFormatted}-`;
+            output += `--by ${author} on ${todayFormatted}--`;
             
             outputText.textContent = output;
         }
